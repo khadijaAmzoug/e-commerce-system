@@ -1,4 +1,3 @@
-// src/models/Product.ts
 
 export class Product {
   id: number;
@@ -28,7 +27,7 @@ export class Product {
   }
 
   getPriceWithDiscount(): number {
-    // السعر النهائي = السعر الأصلي - الخصم + الضريبة
+
     const finalPrice = this.price - this.discountAmount + this.taxAmount;
     return parseFloat(finalPrice.toFixed(2));
   }
